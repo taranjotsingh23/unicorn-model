@@ -1,7 +1,7 @@
 var modelName="";
 
 async function fetchData() {
-await fetch("http://localhost:3000/api/user/po")
+await fetch("https://tandarust-fit-india.herokuapp.com/api/user/po")
   .then((response) => response.json()).then((data)=> {console.log(data.name); modelName=data.name;
   }).catch((err)=>{
     console.log(err);
